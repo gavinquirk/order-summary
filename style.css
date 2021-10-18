@@ -22,12 +22,50 @@
 body {
   width: 100vw;
   height: 100vh;
-}
-
-.container {
-  max-width: 1440px;
   background: url('./images/pattern-background-desktop.svg') no-repeat,
     var(--color-pale-blue);
-  margin: 0 auto;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: var(--font-size-default);
+  color: var(--color-desaturated-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark-blue);
+}
+
+.modal {
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.modal > .hero {
+  margin-bottom: 40px;
+}
+
+.modal h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.modal p {
+}
+
+.modal-content {
+  padding: 0 30px;
 }
