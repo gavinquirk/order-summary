@@ -10,3 +10,24 @@
   --color-dark-blue: hsl(223, 47%, 23%);
   --font-size-default: 16px;
 }
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  background: url('./images/pattern-background-desktop.svg') no-repeat,
+    var(--color-pale-blue);
+  margin: 0 auto;
+  height: 100%;
+}
